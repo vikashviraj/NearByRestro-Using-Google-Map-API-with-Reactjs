@@ -50,7 +50,7 @@ class App extends React.Component {
       this.state.lat
     },${this.state.lng}&type=${this.state.type}&radius=${
       this.state.radius * 1000
-    }&key=AIzaSyBdjAuhBcj1SsrMu31DCBGhTzeNEsuX18U`;
+    }&key=API_KEY`;
     axios
       .get(URL)
       .then((response) => {
@@ -258,5 +258,5 @@ class App extends React.Component {
 }
 
 export default GoogleApiWrapper({
-  apiKey: "AIzaSyBdjAuhBcj1SsrMu31DCBGhTzeNEsuX18U",
+  apiKey: "API_KEY",
 })(App);
